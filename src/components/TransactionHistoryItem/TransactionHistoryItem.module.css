@@ -1,7 +1,0 @@
-.row:nth-child(even) {
-  background-color: #d3d3d3;
-}
-.rowItem {
-  border: 1.5px solid #0e0e0e;
-  text-transform: capitalize;
-}
