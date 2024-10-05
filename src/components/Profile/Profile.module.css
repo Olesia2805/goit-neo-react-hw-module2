@@ -1,0 +1,68 @@
+.card {
+  border: 3px solid #242424;
+  border-radius: 8px;
+  width: 420px;
+  overflow: hidden;
+}
+
+.titleContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.titleContent img {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+}
+
+.titleContent :nth-child(2) {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.titleContent :nth-child(n + 3) {
+  font-size: 24px;
+  color: #8e8e8e;
+  margin-bottom: 8px;
+  font-weight: 100;
+}
+
+.titleContent :last-child {
+  margin-bottom: 16px;
+}
+
+.listAttributes {
+  background-color: #d3d3d3;
+  display: flex;
+  /* justify-content: space-around; */
+  border-top: #242424;
+  font-size: 20px;
+  border-top: 3px solid #808080;
+}
+
+.attribute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  padding: 10px 0;
+}
+
+.attribute:not(:first-child) {
+  border-left: 3px solid #808080;
+}
+
+.attribute :not(:first-child) {
+  font-weight: 700;
+}
+
+.attribute :not(:last-child) {
+  padding: 8px;
+}
