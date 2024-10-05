@@ -1,15 +1,30 @@
 import optCss from './Options.module.css';
 
-const Option = ({ handleFeedback }) => {
+const Option = ({ onFeedback }) => {
   return (
     <>
-      <button onClick={handleFeedback} className={optCss.btn}>
+      <button
+        onClick={() => {
+          onFeedback('good');
+        }}
+        className={optCss.btn}
+      >
         Good
       </button>
-      <button onClick={handleFeedback} className={optCss.btn}>
+      <button
+        onClick={() => {
+          onFeedback('neutral');
+        }}
+        className={optCss.btn}
+      >
         Neutral
       </button>
-      <button onClick={handleFeedback} className={optCss.btn}>
+      <button
+        onClick={() => {
+          onFeedback('bad');
+        }}
+        className={optCss.btn}
+      >
         Bad
       </button>
       {/* <button className={optCss.btn}>Reset</button> */}
