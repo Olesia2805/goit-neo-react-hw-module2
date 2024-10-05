@@ -1,6 +1,6 @@
 import optCss from './Options.module.css';
 
-const Option = ({ onFeedback }) => {
+const Option = ({ onFeedback, totalFeedback, resetFeedback }) => {
   return (
     <>
       <button
@@ -27,7 +27,16 @@ const Option = ({ onFeedback }) => {
       >
         Bad
       </button>
-      {/* <button className={optCss.btn}>Reset</button> */}
+      {totalFeedback > 0 && (
+        <button
+          onClick={() => {
+            resetFeedback();
+          }}
+          className={optCss.btn}
+        >
+          Reset
+        </button>
+      )}
     </>
   );
 };
