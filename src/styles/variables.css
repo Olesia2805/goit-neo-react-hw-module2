@@ -1,0 +1,10 @@
+:root {
+  --background-primary-color: #131313;
+  --content-text-color: #f4f4f4;
+  --title-font-family: 'Qwitcher Grypen', cursive;
+  --content-font-family: 'Playwrite DE Grund', sans-serif;
+  --header-primary-color: #ffe6ff;
+  --header-secondary-color: #ff65bd;
+  --header-tertiary-color: #ff2483;
+  --header-additional-color: #6b1839;
+}
