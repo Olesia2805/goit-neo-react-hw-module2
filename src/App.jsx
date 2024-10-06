@@ -5,7 +5,7 @@ import Option from './components/Options/Options';
 import Feedback from './components/Feedback/Feedback';
 import Notification from './components/Notification/Notification';
 import { useState } from 'react';
-import appCss from './App.module.css';
+// import appCss from './App.module.css';
 
 const App = () => {
   const [feedback, setFeedback] = useState({
