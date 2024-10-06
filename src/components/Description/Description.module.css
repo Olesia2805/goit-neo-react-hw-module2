@@ -2,6 +2,7 @@
   font-family: var(--title-font-family);
   font-size: 72px;
   text-align: center;
+  padding-bottom: 20px;
   color: var(--header-primary-color);
   text-shadow: 0 0 0.6rem var(--header-primary-color),
     0 0 1.5rem var(--header-secondary-color),
