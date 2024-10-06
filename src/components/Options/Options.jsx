@@ -1,4 +1,8 @@
 import optCss from './Options.module.css';
+import { FaRegLaughBeam } from 'react-icons/fa';
+import { FaRegMeh } from 'react-icons/fa';
+import { FaRegFrown } from 'react-icons/fa';
+import { FaUndoAlt } from 'react-icons/fa';
 
 const Option = ({ onFeedback, totalFeedback, resetFeedback }) => {
   return (
@@ -9,7 +13,7 @@ const Option = ({ onFeedback, totalFeedback, resetFeedback }) => {
         }}
         className={optCss.btn}
       >
-        Good
+        Good <FaRegLaughBeam color="var(--header-secondary-color)" />
       </button>
       <button
         onClick={() => {
@@ -17,7 +21,7 @@ const Option = ({ onFeedback, totalFeedback, resetFeedback }) => {
         }}
         className={optCss.btn}
       >
-        Neutral
+        Neutral <FaRegMeh color="var(--header-tertiary-color)" />
       </button>
       <button
         onClick={() => {
@@ -25,7 +29,7 @@ const Option = ({ onFeedback, totalFeedback, resetFeedback }) => {
         }}
         className={optCss.btn}
       >
-        Bad
+        Bad <FaRegFrown color="var(--header-additional-color)" />
       </button>
       {totalFeedback > 0 && (
         <button
@@ -34,7 +38,7 @@ const Option = ({ onFeedback, totalFeedback, resetFeedback }) => {
           }}
           className={optCss.btn}
         >
-          Reset
+          Reset <FaUndoAlt />
         </button>
       )}
     </>
